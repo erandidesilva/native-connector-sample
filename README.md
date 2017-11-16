@@ -14,8 +14,10 @@ function main(string[] args) {
     endpoint<cal:CalculatorConnector> ep {
         create cal:CalculatorConnector();
     }
-    int result = ep.add(2,5);
-    println(result);
+    int resultAdd = ep.add(2,5);
+    int resultDiv = ep.divide(4, 2);
+    println(resultAdd);
+    println(resultDiv);
 }
 ```
 and run the program using the command `ballerina run nativeActionTest.bal`
